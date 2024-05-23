@@ -4,7 +4,8 @@ import {
   ResizablePanelGroup,
 } from "./ui/resizable";
 import DomainSection from "./DomainSection";
-
+import { TabsDemo } from "./tabs";
+import { ModeToggle } from "./theme-button";
 
 export default function Resizebg() {
   return (
@@ -12,8 +13,12 @@ export default function Resizebg() {
       <ResizablePanel defaultSize={50}>
         <ResizablePanelGroup direction="vertical">
           <ResizablePanel defaultSize={70}>
-            <div className="flex  items-center justify-center p-6">
-              <DomainSection/>
+            <div className="flex  items-center flex-col justify-center p-6">
+              <h1 className="text-4xl">Post Women</h1>
+              <div>
+                <TabsDemo />
+                <ModeToggle />
+              </div>
             </div>
           </ResizablePanel>
           <ResizableHandle />
