@@ -1,10 +1,14 @@
-import Resizebg from "../components/Resizebg";
-export default function page(){
+import { ModeToggle } from "../components/theme-button";
+import Inputgroup from "../components/input-group";
+
+export default function page() {
+
   return (
     <main>
       <div className="h-screen w-screen">
-        <Resizebg/>
+        <ModeToggle />
+        <Inputgroup />
       </div>
     </main>
   );
-};
+}
