@@ -62,11 +62,11 @@ const Inputgroup = () => {
             DELETE
           </option>
         </select>
-        <div className="flex flex-row gap-5">
+        <div className="flex sm:flex-row flex-col sm:w-auto w-[90%] mx-auto sm:mx-0  gap-5">
           <Input className="flex" placeholder="http://localhost:8080..." />
           <Input className="flex" placeholder="/api/users/1..." />
         </div>
-        <Button className=" bg-indigo-500 hover:bg-indigo-400 text-white">
+        <Button className=" bg-green-500 hover:bg-green-400 text-white">
           Send Request
         </Button>
       </div>
