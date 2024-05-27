@@ -1,5 +1,6 @@
 import { ModeToggle } from "../components/theme-button";
 import Inputgroup from "../components/input-group";
+import Bodyfields from "../components/body-fields";
 
 export default function page() {
   return (
@@ -9,6 +10,7 @@ export default function page() {
         <div className="h-screen z-10 w-[80%] mx-auto">
           <ModeToggle />
           <Inputgroup />
+          <Bodyfields/>
         </div>
       </div>
     </main>
